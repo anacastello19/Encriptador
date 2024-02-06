@@ -1,0 +1,25 @@
+body{
+background-image: url(img/fondo.png);
+}
+header{
+    background: #F5F5F5;
+}
+
+.btn-encriptador{
+    width: 328px;
+    height: 67px ;
+    border-radius: 24px;
+    border-top: none;
+    text-decoration: none;
+    background: #0A3871;
+    color: #F5F5F5;
+}
+.btn-desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border-top: none;
+    text-decoration: none;
+    background: #D8DFE8 100%;
+    color: #0A3871;
+}
