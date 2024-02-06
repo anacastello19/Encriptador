@@ -9,31 +9,42 @@
 </head>
 <body>
     <header>
-        <img src="img/Logo.png" class="logo">
+        <a href="https://app.aluracursos.com/"><img src="img/Logo.png" class="logo"></a>
     </header>
+
     <main>
+        <!-- El elemento div con la clase conteiner agrupa los elementos relacionados con la entrada de texto -->
         <div class="conteiner">
+
+            <!-- El elemento div con la clase encriptar contiene un área de texto donde el usuario puede ingresar el texto a encriptar o desencriptar -->
             <div class="encriptar">
-                <textarea name="text" id="ingreseText" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <label for="text"></label>
+                <input id="text" name="text" class="ingreseText" type="text" placeholder="Ingrese el texto aquí:" />
             </div>
+
             <div class="terminos">
-                <p> <img src="img/t&c.png"> Solo letras minúsculas y sin acentos</p>
+                <p> <img src="img/t&c.png" alt="Términos y condiciones"> Solo letras minúsculas y sin acentos</p>
             </div>
+
+            <!-- El elemento div con la clase btn contiene dos botones que permiten al usuario encriptar o desencriptar el texto ingresado -->
             <div class="btn">
+                <!-- El atributo onclick define la función de JavaScript que se ejecuta al presionar el botón -->
                 <button class="btn-encriptador" type="button" onclick="encriptar()">Encriptar</button>
                 <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
             </div>
         </div>
-        <div class="">
-            <img src="img/muñeco.png" id="muñeco">
-            <div class="mensaje">
-                <h2 class="title-mensaje">Ningún mensaje fue encontrado</h2>
-                <p class="p-mensaje">Ingresa el texto que desees encriptar o desencriptar. </p>
-            </div>
+        
+        <!-- El elemento div con la clase encriptado agrupa los elementos relacionados con la salida de texto -->
+        <div class="encriptado">
+            <img src="img/muñeco.png" class="muñeco" alt="Muñeco">
+             <!-- El elemento h2 define un título de nivel 2 -->
+            <h2 class="title-mensaje">Ningún mensaje fue encontrado</h2>
+            <label for="text"></label>
+            <input id="text" name="text" class="e-d-text" type="text" placeholder="Ingresa el texto que desees encriptar o desencriptar." />
         </div>
     </main>
-    <footer></footer>
-    
+
+    <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
+    
 </html>
