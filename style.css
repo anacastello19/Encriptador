@@ -4,36 +4,49 @@ background-image: url(img/fondo.png);
 }
 header{
     background: #F5F5F5;
-    margin: 0 0 50px 0;
+    box-sizing: border-box;
 }
+
 header img{
-    width: 100px;
-    top: 40px;
-    left: 40px;
-    gap: 40px;
     margin: 10px;
 }
 
 main{
     display: flex;
-    width: 940px;
+    width: 950px;
     margin: 0 auto;
 }
 
-.encripta{
+.text-ingresar{
+    margin: 50px 0 0 0;
+}
 
+.text-ingresar label{
+    color: #0A3871;
+    font-size: 26px;
+    font-family: 'Inter', sans-serif;
+    border-color: transparent;
+}
+
+textarea{
+    background-color: transparent;
+}
+
+.btn{
+    box-sizing:  border-box;
+    margin: 10px 50px;
 }
 
 .btn-encriptador{
     background: #0A3871;
-    width: 328px;
+    width: 235px;
     height: 67px ;
     border-radius: 24px;    
     text-align: center;
     color: #F5F5F5;
 }
 .btn-desencriptar{
-    width: 328px;
+    width: 235px;
     height: 67px;
     border-radius: 24px;
     border-top: none;
@@ -42,17 +55,23 @@ main{
     color: #0A3871;
 }
 
-.encriptado{
+.muñeco{
     text-align: center;
-    padding: 200px 20px 0 0;
-    margin: 0 20px 20px 0;
+    padding: 100px 1px 0 1px;
+    margin: 30px 1px 20px 200px;
     background: #ffffff;
     width: 350px;
-    height: 600px;
+    height: 500px;
     border-radius: 32px;
 }
 
+.img-niño{
+    width: 200px;
+    margin: 40px;
+}
+
 .title-mensaje{
+    text-align: center;
     font-weight: bold;
     font-size: 24px;
     color: #343A40;
@@ -61,12 +80,12 @@ main{
 }
 
 .e-d-text{
+    text-align: center;
     color: #495057;
-    font-weight: normal;
-    font-size: 14px;
+    font-size: 11px;
     box-sizing: border-box; /* El ancho y el alto incluyen el contenido, el relleno y el borde */
     border: none;
-    width: 99%; /* Ancho total de la caja */
+    width: 95%; /* Ancho total de la caja */
     height: 20%; /* Alto total de la caja */
     padding: 0 5px 0 5px; /* Espacio entre el contenido y el borde */
     margin:  10px ; /* Espacio entre dos cajas consecutivas */
