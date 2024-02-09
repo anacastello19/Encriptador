@@ -3,11 +3,13 @@ background-image: url(img/fondo.png);
 
 }
 header{
+    min-width: 1000px;
+    width: 100%;
     background: #F5F5F5;
     box-sizing: border-box;
 }
 
-header img{
+.logo{
     margin: 10px;
 }
 
@@ -18,24 +20,28 @@ main{
 }
 
 .text-ingresar{
-    margin: 50px 0 0 0;
+    margin: 15px;
 }
 
+.text-ingresar textarea{
+    background: transparent;
+}
 .text-ingresar label{
     color: #0A3871;
     font-size: 26px;
     font-family: 'Inter', sans-serif;
-    border-color: transparent;
-}
-
-textarea{
-    background-color: transparent;
+    display: block;
+    /* Para que la etiqueta ocupe todo el ancho */
+    margin-bottom: 20px;
+    /* Espacio entre la etiqueta y el área de texto */
 }
 
 .btn{
-    box-sizing:  border-box;
-    margin: 10px 50px;
+    display: inline-block;
+    margin: 15px;
+    /* Espacio entre los botones */
 }
+
 
 .btn-encriptador{
     background: #0A3871;
@@ -49,19 +55,18 @@ textarea{
     width: 235px;
     height: 67px;
     border-radius: 24px;
-    border-top: none;
     text-decoration: none;
-    background: #D8DFE8 100%;
+    background: #D8DFE8;
     color: #0A3871;
 }
 
 .muñeco{
     text-align: center;
     padding: 100px 1px 0 1px;
-    margin: 30px 1px 20px 200px;
+    margin: 15px 1px 20px 200px;
     background: #ffffff;
     width: 350px;
-    height: 500px;
+    height: 450px;
     border-radius: 32px;
 }
 
