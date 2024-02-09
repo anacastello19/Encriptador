@@ -10,7 +10,9 @@ header{
 }
 
 .logo{
-    margin: 10px;
+    padding: auto;
+    margin: 5px;
+    width: 70px;
 }
 
 main{
@@ -97,3 +99,12 @@ main{
     background: #ffffff; /* Color de fondo del contenido */
 }
 
+footer{
+    background: #F5F5F5 ;
+    text-align: center;
+}
+
+footer img{
+    margin: 10px;
+    width: 30px;
+}
