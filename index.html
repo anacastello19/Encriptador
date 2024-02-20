@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
 </head>
+
 <body>
     <header>
         <a href="https://app.aluracursos.com/"><img src="img/Logo.png" alt="Logo-Alura" class="logo"></a>
@@ -20,7 +22,7 @@
             <div class="text-ingresar">
 
                 <label for="textoIngresar">Ingrese el texto aquí:</label>
-                <textarea name="ingresar" cols="70" rows="10" id="textoIngresar"></textarea>
+                <textarea name="ingresar" cols="70" rows="25" id="ingresarEncriptado"></textarea>
             </div>
 
             <div class="terminos">
@@ -34,26 +36,28 @@
                 <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
             </div>
         </fieldset>
-        
+
         <!-- El elemento div con la clase encriptado agrupa los elementos relacionados con la salida de texto -->
         <fieldset class="muñeco">
 
             <img src="img/muñeco.png" class="img-niño" alt="Muñeco">
-             <!-- El elemento h2 define un título de nivel 2 -->
+            <!-- El elemento h2 define un título de nivel 2 -->
             <h2 class="title-mensaje">Ningún mensaje fue encontrado</h2>
-            <label for="text"></label>
-            <input id="text" name="text" class="e-d-text" type="text" placeholder="Ingresa el texto que desees encriptar o desencriptar." />
+            <label for="ingresarDesencriptado"></label>
+            <input id="ingresarDesencriptado" name="text" class="e-d-text" type="text"
+                placeholder="Ingresa el texto que desees encriptar o desencriptar." />
 
         </fieldset>
 
     </main>
 
     <footer>
-        <a href="https://www.linkedin.com/in/ana-virginia-castello/"><img src="img/linkedin.png" alt="Logo linkedin"></a>
+        <a href="https://www.linkedin.com/in/ana-virginia-castello/"><img src="img/linkedin.png"
+                alt="Logo linkedin"></a>
         <legend>&copy; Proyecto encriptar de Ana Castello - Alura</legend>
     </footer>
 
     <script src="app.js"></script>
 </body>
-    
+
 </html>
