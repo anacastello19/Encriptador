@@ -22,7 +22,7 @@
             <div class="text-ingresar">
 
                 <label for="textoIngresar">Ingrese el texto aquí:</label>
-                <textarea name="ingresar" cols="70" rows="25" id="ingresarEncriptado"></textarea>
+                <textarea name="ingresar" cols="70" rows="25" id="ingresarDesEncriptado"></textarea>
             </div>
 
             <div class="terminos">
@@ -38,15 +38,16 @@
         </fieldset>
 
         <!-- El elemento div con la clase encriptado agrupa los elementos relacionados con la salida de texto -->
-        <fieldset class="muñeco">
+        <fieldset  id="muñeco">
 
             <img src="img/muñeco.png" class="img-niño" alt="Muñeco">
             <!-- El elemento h2 define un título de nivel 2 -->
             <h2 class="title-mensaje">Ningún mensaje fue encontrado</h2>
             <label for="ingresarDesencriptado"></label>
-            <input id="ingresarDesencriptado" name="text" class="e-d-text" type="text"
+            <input id="ingresarEncripar-Desencriptado" name="text" class="e-d-text" type="text"
                 placeholder="Ingresa el texto que desees encriptar o desencriptar." />
-
+            
+            <button type="button" id="copiar">Copiar</button>
         </fieldset>
 
     </main>

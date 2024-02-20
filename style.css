@@ -65,13 +65,12 @@ main {
     color: #0A3871;
 }
 
-.muñeco {
+#muñeco {
     text-align: center;
     padding: 100px 1px 0 1px;
     margin: 15px 1px 20px 200px;
     background: #ffffff;
     width: 350px;
-    height: 450px;
     border-radius: 32px;
 }
 
