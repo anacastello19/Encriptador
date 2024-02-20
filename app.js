@@ -25,14 +25,7 @@
     //Capturar el texto escrito en el campo del input del HTML
     const desencriptarText = document.getElementById("ingresarDesencriptado");
     const textDesencriptado = desencriptarText.value;
-    /*console.log(textDesencriptado)
-      if(texto.length !=0){
-        texto= cifrar;
-        tituloMensaje.textContent="Texto encriptado con exito";
-        parrafo.textContent="";
-        nextElementSibling.src
-
-    }*/
+  
  }
  
 
