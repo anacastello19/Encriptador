@@ -1,7 +1,9 @@
 
 //Crear función
 //Conectar función a su respectivo botón en el HTML
- function encriptar(){
+function encriptar(){
+    //Boton
+    let btnCopiar= document.getElementById("copiar");
     //Capturar el texto escrito en el campo del input del HTML
     let encriptarText = document.getElementById("ingresarDesEncriptado");
     let textEncriptado= encriptarText.value;
@@ -16,15 +18,12 @@
 
 
     if(textEncriptado.length !=0){
-        //Se encripta el texto 
-        textEncriptado=conversion;
         //Mostramos en consola
         console.log(conversion);
-        if(document.getElementById("muñeco").innerHTML = textEncriptado){
-
-        }
+        document.getElementById("muñeco").innerHTML = conversion;
+        btnCopiar.style.display="block";
     }
- }
+}
 //Conectar función a su respectivo botón en el HTML
 function desencriptar(){
     //Capturar el texto escrito en el campo del input del HTML
