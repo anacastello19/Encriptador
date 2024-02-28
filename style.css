@@ -1,59 +1,78 @@
+
 body{
-background-image: url(img/fondo.png);
+    background-image: url(img/fondo.png);
 
 }
-header{
-    min-width: 1000px;
+
+header {
     width: 100%;
     background: #F5F5F5;
     box-sizing: border-box;
 }
 
-.logo{
-    padding: auto;
-    margin: 5px;
-    width: 70px;
+.logo {
+    padding: 1%;
+    margin-left: 10px;
+    width: 10%;
+
 }
 
-main{
+main {
+    /*caja flexibles*/
     display: flex;
-    width: 950px;
-    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-left: 80px;
 }
 
-.text-ingresar{
-    margin: 15px;
-}
-
-.text-ingresar textarea{
-    background: transparent;
-}
-.text-ingresar label{
-    color: #0A3871;
-    font-size: 26px;
+textarea {
     font-family: 'Inter', sans-serif;
-    display: block;
-    /* Para que la etiqueta ocupe todo el ancho */
-    margin-bottom: 20px;
-    /* Espacio entre la etiqueta y el área de texto */
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    border: none;
+    background: transparent;
+    margin-top: 90px;
 }
 
-.btn{
+::placeholder{
+    color: #0A3871;
+}
+#ingresarDesEncriptado:focus{
+    outline: none;
+}
+
+.mensaje{
+    background: white;
+    background-image: url(img/muñeco.png);
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.btn {
+    margin: 2% 2% 0 0;
     display: inline-block;
-    margin: 15px;
+
     /* Espacio entre los botones */
 }
 
-
-.btn-encriptador{
+.btn-encriptador {
     background: #0A3871;
     width: 235px;
-    height: 67px ;
-    border-radius: 24px;    
+    height: 67px;
+    border-radius: 24px;
     text-align: center;
     color: #F5F5F5;
 }
-.btn-desencriptar{
+
+.btn-desencriptar {
     width: 235px;
     height: 67px;
     border-radius: 24px;
@@ -62,7 +81,7 @@ main{
     color: #0A3871;
 }
 
-.muñeco{
+.muñeco {
     text-align: center;
     padding: 100px 1px 0 1px;
     margin: 15px 1px 20px 200px;
@@ -72,12 +91,12 @@ main{
     border-radius: 32px;
 }
 
-.img-niño{
+.img-niño {
     width: 200px;
     margin: 40px;
 }
 
-.title-mensaje{
+.title-mensaje {
     text-align: center;
     font-weight: bold;
     font-size: 24px;
@@ -86,25 +105,31 @@ main{
     height: 58;
 }
 
-.e-d-text{
+.e-d-text {
     text-align: center;
     color: #495057;
     font-size: 11px;
-    box-sizing: border-box; /* El ancho y el alto incluyen el contenido, el relleno y el borde */
+    box-sizing: border-box;
+    /* El ancho y el alto incluyen el contenido, el relleno y el borde */
     border: none;
-    width: 95%; /* Ancho total de la caja */
-    height: 20%; /* Alto total de la caja */
-    padding: 0 5px 0 5px; /* Espacio entre el contenido y el borde */
-    margin:  10px ; /* Espacio entre dos cajas consecutivas */
-    background: #ffffff; /* Color de fondo del contenido */
+    width: 95%;
+    /* Ancho total de la caja */
+    height: 20%;
+    /* Alto total de la caja */
+    padding: 0 5px 0 5px;
+    /* Espacio entre el contenido y el borde */
+    margin: 10px;
+    /* Espacio entre dos cajas consecutivas */
+    background: #ffffff;
+    /* Color de fondo del contenido */
 }
 
-footer{
-    background: #F5F5F5 ;
+footer {
+    background: #F5F5F5;
     text-align: center;
 }
 
-footer img{
+footer img {
     margin: 10px;
     width: 30px;
 }
