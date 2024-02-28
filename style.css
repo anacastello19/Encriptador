@@ -24,7 +24,8 @@ main {
     margin-left: 80px;
 }
 
-textarea {
+.ingresar {
+    color: #0A3871;
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 400;
@@ -37,93 +38,63 @@ textarea {
 ::placeholder{
     color: #0A3871;
 }
-#ingresarDesEncriptado:focus{
+.ingresar:focus{
     outline: none;
 }
 
 .mensaje{
     background: white;
-    background-image: url(img/muñeco.png);
+    background-image: url('img/muñeco.png');
     background-repeat: no-repeat;
+    border: none;
     border-radius: 24px;
     color: #0A3871;
     margin-left: 98px;
+    margin-top: 20px;
     padding-top: 20px;
-    position: fixed;
 }
 
 .mensaje:focus{
     outline: none;
 }
 
-.btn {
-    margin: 2% 2% 0 0;
-    display: inline-block;
-
+.btn{
+    display: flex;
+    margin: 10px;
     /* Espacio entre los botones */
 }
 
 .btn-encriptador {
-    background: #0A3871;
-    width: 235px;
-    height: 67px;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
     border-radius: 24px;
-    text-align: center;
-    color: #F5F5F5;
+    color: white;
+    cursor: pointer;
+    height: 67px ;
+    width: 235px;
 }
 
 .btn-desencriptar {
-    width: 235px;
-    height: 67px;
     border-radius: 24px;
-    text-decoration: none;
+    cursor: pointer;
     background: #D8DFE8;
     color: #0A3871;
+    border: 1px solid #0A3871;
+    margin-left: 30px;
+    height: 67px;
+    width: 235px;
 }
 
-.muñeco {
-    text-align: center;
-    padding: 100px 1px 0 1px;
-    margin: 15px 1px 20px 200px;
-    background: #ffffff;
-    width: 350px;
-    height: 450px;
-    border-radius: 32px;
-}
+.copiar{
 
-.img-niño {
-    width: 200px;
-    margin: 40px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 100px;
+    width: 336px;
 }
-
-.title-mensaje {
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
-    color: #343A40;
-    width: 336;
-    height: 58;
-}
-
-.e-d-text {
-    text-align: center;
-    color: #495057;
-    font-size: 11px;
-    box-sizing: border-box;
-    /* El ancho y el alto incluyen el contenido, el relleno y el borde */
-    border: none;
-    width: 95%;
-    /* Ancho total de la caja */
-    height: 20%;
-    /* Alto total de la caja */
-    padding: 0 5px 0 5px;
-    /* Espacio entre el contenido y el borde */
-    margin: 10px;
-    /* Espacio entre dos cajas consecutivas */
-    background: #ffffff;
-    /* Color de fondo del contenido */
-}
-
 footer {
     background: #F5F5F5;
     text-align: center;
