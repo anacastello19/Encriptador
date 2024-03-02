@@ -20,7 +20,6 @@ function encriptar(){
     if(textEncriptado.length !=0){
         //Mostramos en consola
         console.log(conversion);
-        document.getElementById("muñeco").innerHTML = conversion;
         btnCopiar.style.display="block";
     }
 }
