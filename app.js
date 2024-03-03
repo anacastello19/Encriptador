@@ -3,10 +3,10 @@
 //Conectar función a su respectivo botón en el HTML
 function encriptar(){
     //Capturar el texto escrito en el campo del input del HTML
-    const encriptarText = document.getElementById("ingresarDesEncriptado").value;
+    let encriptarText = document.getElementById("ingresarDesEncriptado").value;
     console.log(encriptarText)
     
-    const conversionLetter= {
+    let conversionLetter= {
         e: "enter",
         i: "imes",
         a: "ai",
@@ -14,12 +14,14 @@ function encriptar(){
         u: "ufat"
     }; 
 
-    const conversion= encriptarText.replace(/[eiaou]/gi, match => conversionMap[match]);
+    let conversion= encriptarText.replace(/[eiaou]/gi, match => conversionLetter[match]);
 
     if(encriptarText.length !==0){
         //Mostramos en consola
         console.log(conversion);
         document.getElementById("copiar").style.display="block";
+        //document.getElementById("copiar").style.text="center";
+
     }
 }
 //Conectar función a su respectivo botón en el HTML
@@ -36,7 +38,7 @@ function desencriptar(){
         ufat: "u"
     };
 
-    const conversion =desencriptarText.replace(/\b(enter|imes|ai|ober|ufat)\b/gi, match => conversionMap[match]);
+    const conversion =desencriptarText.replace(/\b(enter|imes|ai|ober|ufat)\b/gi, match => conversionLetter[match]);
 
     if(textDesencriptado.length !==0){
         document.getElementById("muñeco").innerHTML = conversion;
