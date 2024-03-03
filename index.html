@@ -21,7 +21,7 @@
     <main>        
         <section class="box-ingresar">
 
-            <textarea  class="ingresar" cols="40" rows="10" id="ingresarDesEncriptado">Ingrese el texto aquí:</textarea>
+            <textarea  class="ingresar" cols="40" rows="10" id="ingresarDesEncriptado" placeholder="Ingrese el texto aquí:"></textarea>
 
             <div class="terminosCondiciones">
                 <h6><img src="img/t&c.png" alt="Términos y condiciones"> Solo letras minúsculas y sin acentos</h6>
@@ -37,12 +37,14 @@
 
         
         <section class="chico">
-            
-            <img src="img/muñeco.png" alt="chico">
-            <textarea class="mensaje" cols="35" rows="10"></textarea>
+            <div id="muñeco">
+                <img src="img/muñeco.png" alt="chico">
+                <textarea id="mensaje" cols="35" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+            </div>
+
             
             <div>
-                <button class="copiar" type="button" id="copiar">Copiar</button>
+                <button class="copiar" type="button" id="copiar" onclick="copiar()">Copiar</button>
 
             </div>
             

@@ -58,18 +58,23 @@ main {
     padding-top:30% ;
 }
 
-.mensaje{
+#mensaje{
     background-repeat: no-repeat;
     border: none;
-    border-radius: 24px;
     color: #0A3871;
     margin-left: 9px;
     margin-top: 1%;
     padding: 1%;
 }
-
-.mensaje:focus{
+#mensaje::placeholder{
+    text-align: center;
+}
+#mensaje:focus{
     outline: none;
+}
+
+#muñeco{
+    margin-top: 10%;
 }
 
 .btn{
@@ -109,6 +114,7 @@ main {
     height: 67px;
     width: 235px;
     margin-left: 20%;
+    margin-top: 149%;
 }
 footer {
     background: #F5F5F5;
