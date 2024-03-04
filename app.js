@@ -42,6 +42,19 @@ function desencriptar(){
     }
 }
 
+async function copiar() {
+    try {
+        await navigator.clipboard.writeText(mensaje.innerHTML);
+        // El texto se copió correctamente
+    } catch (err) {
+        console.error('No pudimos copiar: ', err);
+        // Manejo de errores (por ejemplo, si el navegador no admite la API del portapapeles)
+    }
+
+    // Habilitar los botones después de intentar copiar
+    encriptar.disabled = false;
+    desencriptar.disabled = false;
+}
 
 //Desarrollar la lógica de la encriptación
 //Mostrar en la pantalla el resultado del texto encriptado
