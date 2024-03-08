@@ -1,11 +1,9 @@
-
 body{
     background-image: url(img/fondo.png);
-
-
 }
 
-header {
+header{
+    margin: auto;
     width: 100%;
     background: #F5F5F5;
     box-sizing: border-box;
@@ -81,6 +79,7 @@ main {
     display: flex;
     margin: 10px;
     /* Espacio entre los botones */
+
 }
 
 .btn-encriptador {
@@ -116,6 +115,7 @@ main {
     margin-left: 20%;
     margin-top: 149%;
 }
+
 footer {
     background: #F5F5F5;
     text-align: center;
@@ -124,4 +124,61 @@ footer {
 footer img {
     margin: 10px;
     width: 30px;
+}
+
+/*Pagina responsiva*/
+@media screen and (max-width:455px){
+
+    body {
+        background-image: url(img/fondo.png) ;
+    }
+
+    header {
+        width: 100%;
+        padding: 1%;   
+        background: #F5F5F5;
+        text-align: center;
+      
+    }
+    .logo{
+        padding: 2%;
+        width: 20%;
+    }
+
+    main{
+        display: block;
+        text-align: center;
+        width: 98%;
+        margin: 0;
+    }
+    
+    .ingresar{
+        margin: 0px;
+        width: 100%;
+        height: 300px;
+        border: #0A3871 solid;
+    }
+
+    .terminosCondiciones{
+        text-align: start;
+    }
+
+    .chico{
+        width: 90%;
+        height: 186px;
+        margin: 3%;
+        padding: 15px; 
+        border-radius: 32px; 
+        gap: 32px;
+        text-align: center;
+        
+    }
+    .chico img{
+        display: none;
+    }
+
+    #mensaje{
+        width: 90%;
+    }
+
 }
