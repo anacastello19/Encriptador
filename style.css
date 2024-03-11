@@ -23,6 +23,7 @@ main {
     display: flex;
     margin-bottom: 50px;
     margin-left: 80px;
+    padding: 2%;
 }
 .ingresar{
     color: #0A3871;
@@ -138,6 +139,7 @@ main {
 footer {
     background: #F5F5F5;
     text-align: center;
+    width: 110%;
 
 }
 
@@ -150,7 +152,7 @@ footer img {
 @media screen and (max-width:480px){
 
     header {
-        width: 100%;
+        width: 110%;
         padding: 1%;   
         background: #F5F5F5;
         text-align: center;
