@@ -147,7 +147,7 @@ footer img {
 }
 
 /*Pagina responsiva*/
-@media (max-width:455px){
+@media screen and (max-width:480px){
 
     header {
         width: 100%;
