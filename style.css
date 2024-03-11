@@ -148,10 +148,6 @@ footer img {
 /*Pagina responsiva*/
 @media screen and (max-width:455px){
 
-    body {
-        background-image: url(img/fondo.png) ;
-    }
-
     header {
         width: 100%;
         padding: 1%;   
