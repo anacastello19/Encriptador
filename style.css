@@ -1,5 +1,7 @@
 body{
-    background-image: url(img/fondo.png);
+    background-image: url(img/fondo.png);  
+    min-height: 100vh;
+    grid-template-columns: auto 1fr auto;
 }
 
 header{
@@ -22,9 +24,6 @@ main {
     margin-bottom: 50px;
     margin-left: 80px;
 }
-textarea{
-    
-}
 .ingresar{
     color: #0A3871;
     font-family: 'Inter', sans-serif;
@@ -34,6 +33,7 @@ textarea{
     border: none;
     background: transparent;
     margin-top: 90px;
+    padding: 10% 2%;
 }
 
 ::placeholder{
@@ -138,6 +138,7 @@ textarea{
 footer {
     background: #F5F5F5;
     text-align: center;
+
 }
 
 footer img {
@@ -171,16 +172,16 @@ footer img {
         margin: 0px;
         width: 100%;
         height: 300px;
-        border: #0A3871 solid;
-    }
+        }
 
     .terminosCondiciones{
         text-align: start;
+        padding: 0% 3%;
     }
 
     .chico{
         width: 90%;
-        height: 186px;
+        height: 196px;
         margin: 10px;
         padding: 15px; 
         border-radius: 32px; 
@@ -197,5 +198,4 @@ footer img {
     .copiar{
         margin-top: 18%;
     }
-
 }
