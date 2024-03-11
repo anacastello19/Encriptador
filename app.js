@@ -17,8 +17,10 @@ function encriptar(){
 
     if(encriptarText.length !=0){
         //Mostramos en consola
-        document.getElementById("muñeco").innerHTML = conversion;
+        document.getElementById("mensaje").innerHTML = conversion;
         document.getElementById("copiar").style.display="block";
+        document.getElementById("img").style.display="none";
+
         //document.getElementById("copiar").style.text="center";
 
     }

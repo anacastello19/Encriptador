@@ -22,7 +22,9 @@ main {
     margin-bottom: 50px;
     margin-left: 80px;
 }
-
+textarea{
+    
+}
 .ingresar{
     color: #0A3871;
     font-family: 'Inter', sans-serif;
@@ -50,6 +52,10 @@ main {
     background: white;
     border: none;
     border-radius: 24px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.30);
+}
+.chico:focus {
+    outline: none;
 }
 
 .chico img{
@@ -63,15 +69,28 @@ main {
     margin-left: 9px;
     margin-top: 1%;
     padding: 1%;
+    background: white;
+    text-align: center;
+    margin: 1%;
+    width: 350px;
 }
 #mensaje::placeholder{
     text-align: center;
+    background: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    
 }
 #mensaje:focus{
     outline: none;
 }
 
 #muñeco{
+    background: white;
     margin-top: 10%;
 }
 
@@ -113,7 +132,7 @@ main {
     height: 67px;
     width: 235px;
     margin-left: 20%;
-    margin-top: 149%;
+    margin-top: 1%;
 }
 
 footer {
@@ -166,12 +185,10 @@ footer img {
     .chico{
         width: 90%;
         height: 186px;
-        margin: 3%;
+        margin: 10px;
         padding: 15px; 
         border-radius: 32px; 
         gap: 32px;
-        text-align: center;
-        
     }
     .chico img{
         display: none;
@@ -179,6 +196,10 @@ footer img {
 
     #mensaje{
         width: 90%;
+    }
+
+    .copiar{
+        margin-top: 18%;
     }
 
 }
