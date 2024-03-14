@@ -196,8 +196,8 @@ footer img {
     .btn{
         display: block;
         width: 90%;
-        text-align: center;
     }
+
     .btn-encriptador, .btn-desencriptar{
         width: 99%;
         margin-left: 15px;
@@ -206,7 +206,7 @@ footer img {
     }
     .chico {
         width: 95%;
-        height: 190px;
+        height: 100px;
         margin: 15px 1px;
         padding: 1px 5px;
         border-radius: 32px;
@@ -215,7 +215,6 @@ footer img {
     }
 
     #muñeco{
-        display: flex;
         background: transparent;
     }
     .chico img {
@@ -223,21 +222,28 @@ footer img {
     }
 
     #mensaje {
-        width: 99%;
+        width: 90%;
         height: 30%;
         background: transparent;
     }
+    
+    #mensaje::placeholder {
+        text-align: center;
+        font-size: 12px;
+        line-height: 100px;
+    }
 
     .copiar {
-        margin: 1px 2px 20px 90px;
+        position: relative;
+        margin: auto;
+        /*margin: 1px 2px 20px 90px;*/
     }
     footer{
         width: 104%;
     }
 }
 
-@media screen and (max-width:768px){
-
+@media screen and (min-width: 481px) and (max-width:768px){
     header {
         width: 104%;
         background: #F5F5F5;
@@ -276,7 +282,7 @@ footer img {
         text-align: center;
     }
     
-    .btn-encriptador,    .btn-desencriptar {
+    .btn-encriptador, .btn-desencriptar {
         width: 80%;
         margin-left: 15px;
         margin: 5px;
@@ -284,11 +290,11 @@ footer img {
     }
     
     .chico {
+        position: relative;
         width: 90%;
         height: 10px;
         margin: 30px 1px;
-        margin-left: 30px;
-        padding: 1px 5px;
+        margin-left: 20px;
         border-radius: 32px;
         background: white;
         height: 30%;
@@ -311,12 +317,14 @@ footer img {
     }
     #mensaje::placeholder{
         font-family: 'Inter', sans-serif;
-        font-size: 16px;            text-align: center;
+        font-size: 12px;            
+        text-align: inherit;
         line-height: 100px;
     }
     
     .copiar {
-        margin: 1px 2px 20px 215px;
+        position: relative;
+        margin: auto;
     }
     
     footer {
