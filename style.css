@@ -1,10 +1,11 @@
-body{
-    background-image: url(img/fondo.png);  
+body {
+    background-image: url(img/fondo.png);
     min-height: 100vh;
     grid-template-columns: auto 1fr auto;
+
 }
 
-header{
+header {
     margin: auto;
     width: 100%;
     background: #F5F5F5;
@@ -21,49 +22,56 @@ header{
 main {
     /*caja flexibles*/
     display: flex;
-    margin-bottom: 50px;
+    /*margin-bottom: 5px;*/
     margin-left: 80px;
     padding: 2%;
 }
-.ingresar{
+
+.ingresar {
     color: #0A3871;
     font-family: 'Inter', sans-serif;
     font-size: 32px;
-    font-weight: 400;
-    line-height: 48px;
+    font-weight: 40px;
+    line-height: 28px;
     border: none;
     background: transparent;
-    margin-top: 90px;
     padding: 10% 2%;
 }
 
-::placeholder{
+::placeholder {
     color: #0A3871;
 }
-.ingresar:focus{
+
+.ingresar:focus {
     outline: none;
 }
 
-.chico{
+.chico {
     display: block;
-    text-align: center;
+    height: 550px;
+    border-radius: 32;
     margin: 1%;
     padding: 1%;
-    width: 350px;
+    margin-left: 10%;
+    line-height: 28px;
+    width: 300px;
     background: white;
     border: none;
     border-radius: 24px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.30);
 }
+
 .chico:focus {
     outline: none;
 }
 
-.chico img{
-    padding-top:30% ;
+.chico img {
+    padding-top: 80px;
+    width: 260px;
+    height: 225px;
 }
 
-#mensaje{
+#mensaje {
     background-repeat: no-repeat;
     border: none;
     color: #0A3871;
@@ -73,31 +81,36 @@ main {
     background: white;
     text-align: center;
     margin: 1%;
-    width: 350px;
+    width: 299px;
+    height: 190px;
 }
-#mensaje::placeholder{
+
+#mensaje::placeholder {
     text-align: center;
     background: white;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
+    font-weight: 40px;
+    line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
-    
+
 }
-#mensaje:focus{
+
+#mensaje:focus {
     outline: none;
 }
 
-#muñeco{
+#muñeco {
     background: white;
     margin-top: 10%;
 }
-
-.btn{
+.terminosCondiciones{
+    margin: 30px;
+}
+.btn {
     display: flex;
-    margin: 10px;
+    margin: 20px 0 1px 0;
     /* Espacio entre los botones */
 
 }
@@ -108,7 +121,7 @@ main {
     border-radius: 24px;
     color: white;
     cursor: pointer;
-    height: 67px ;
+    height: 67px;
     width: 235px;
 }
 
@@ -123,7 +136,7 @@ main {
     width: 235px;
 }
 
-.copiar{
+.copiar {
     display: none;
     text-align: center;
     border: 1px solid #0A3871;
@@ -132,14 +145,13 @@ main {
     cursor: pointer;
     height: 67px;
     width: 235px;
-    margin-left: 20%;
-    margin-top: 1%;
+    margin: 220px 35px ;
 }
 
 footer {
     background: #F5F5F5;
     text-align: center;
-    width: 110%;
+    width: 100%;
 
 }
 
@@ -149,55 +161,83 @@ footer img {
 }
 
 /*Pagina responsiva*/
-@media screen and (max-width:480px){
-
+@media screen and (max-width:480px) {
     header {
-        width: 110%;
-        padding: 1%;   
+        width: 104%;
         background: #F5F5F5;
         text-align: center;
-      
+
     }
-    .logo{
+
+    .logo {
         padding: 2%;
         width: 20%;
     }
 
-    main{
+    main {
         display: block;
         text-align: center;
         width: 98%;
         margin: 0;
     }
-    
-    .ingresar{
+
+    .ingresar {
         margin: 0px;
         width: 100%;
-        height: 300px;
-        }
+        height: 250px;
+    }
 
-    .terminosCondiciones{
+    .terminosCondiciones {
         text-align: start;
-        padding: 0% 3%;
+        width: 90%;
+        margin: 0px;
     }
 
-    .chico{
+    .btn{
+        display: block;
         width: 90%;
-        height: 196px;
-        margin: 10px;
-        padding: 15px; 
-        border-radius: 32px; 
-        gap: 32px;
+        text-align: center;
     }
-    .chico img{
+    .btn-encriptador, .btn-desencriptar{
+        width: 99%;
+        margin-left: 15px;
+        margin: 5px;
+
+    }
+    .chico {
+        width: 95%;
+        height: 190px;
+        margin: 15px 1px;
+        padding: 1px 5px;
+        border-radius: 32px;
+        background: white;
+        height: 30%;
+    }
+
+    #muñeco{
+        display: flex;
+        background: transparent;
+    }
+    .chico img {
         display: none;
     }
 
-    #mensaje{
-        width: 90%;
+    #mensaje {
+        width: 99%;
+        height: 30%;
+        background: transparent;
     }
 
-    .copiar{
-        margin-top: 18%;
+    .copiar {
+        margin: 1px 2px 20px 90px;
+    }
+    footer{
+        width: 104%;
+    }
+}
+
+@media screen and (max-width:768px){
+    main{
+        display: block;
     }
 }
