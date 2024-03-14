@@ -1,10 +1,11 @@
 
 //Crear función
-//Conectar función a su respectivo botón en el HTML
+//Conectar función a su respectivo botón en el HTMl
+
 function encriptar(){
     //Capturar el texto escrito en el campo del input del HTML
-    let encriptarText = document.getElementById("ingresarDesEncriptado").value;
-    
+    let encriptarText = document.getElementById("ingresarDesEncriptado").value.toLowerCase();
+
     let conversionLetter= {
         e: "enter",
         i: "imes",
@@ -14,6 +15,8 @@ function encriptar(){
     }; 
 
     let conversion= encriptarText.replace(/[eiaou]/gi, match => conversionLetter[match]);
+
+    conversion.toLowerCase();
 
     if(encriptarText.length !=0){
         //Mostramos en consola
@@ -28,7 +31,8 @@ function encriptar(){
 //Conectar función a su respectivo botón en el HTML
 function desencriptar(){
     //Capturar el texto escrito en el campo del input del HTML
-    let desencriptarText = document.getElementById("ingresarDesEncriptado").value;
+    let desencriptarText = document.getElementById("ingresarDesEncriptado").value.toLowerCase();
+
 
     let conversion= desencriptarText
         .replace(/enter/gi, "e")
@@ -43,12 +47,11 @@ function desencriptar(){
 
     }
 }
-// Botón copiar con la api del portapapeles
-let botonCopiar = document.getElementById("copiar");// el id de mi boton Copiar es "copiar"
+
+let botonCopiar = document.getElementById("copiar");
 
 botonCopiar.addEventListener("click", function () {
-  let textoResultado = document.getElementById("mensaje").innerHTML; /*el id del elemento <p> donde se muestra el texto a copiar es "resultado" */
-
+  let textoResultado = document.getElementById("mensaje").innerHTML;
   navigator.clipboard.writeText(textoResultado)
     .then(() => {
       alert("Texto copiado al portapapeles correctamente.");
