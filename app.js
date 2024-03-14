@@ -38,10 +38,24 @@ function desencriptar(){
         .replace(/ufat/gi, "u");
 
     if(desencriptarText.length !=0){
-        document.getElementById("muñeco").innerHTML = conversion;
+        document.getElementById("mensaje").innerHTML = conversion;
         document.getElementById("copiar").style.display="block";
 
     }
 }
+// Botón copiar con la api del portapapeles
+let botonCopiar = document.getElementById("copiar");// el id de mi boton Copiar es "copiar"
+
+botonCopiar.addEventListener("click", function () {
+  let textoResultado = document.getElementById("mensaje").innerHTML; /*el id del elemento <p> donde se muestra el texto a copiar es "resultado" */
+
+  navigator.clipboard.writeText(textoResultado)
+    .then(() => {
+      alert("Texto copiado al portapapeles correctamente.");
+    })
+    .catch((error) => {
+      alert("Error al copiar texto: " + error);
+    });
+});
 //Desarrollar la lógica de la encriptación
 //Mostrar en la pantalla el resultado del texto encriptado
